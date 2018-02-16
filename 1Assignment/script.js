@@ -46,24 +46,31 @@ function checkIfPalindrome(){
 
 function getPrimeSeries(){
     var number = parseInt(document.getElementById("prime_input").value);
-    console.log(number);
+    //console.log(number);
     var foo = new Array(number-1);
-    for(var i=0;i<number-1;i++)
+    for(var i=2;i<=number;i++)
     {
         foo[i-2] = i;
     }
-
+    //console.log(foo);
     for(var i=0;i<number-1;i++)
     {
         //freq=1;
         while(foo[i]==-1)
             i++;
         freq=foo[i];
-        for(var j=i;j<number-1;j=j+number)
+        //console.log(freq);
+        for(var j=(i+freq);j<number-1;j=j+freq)
         {
-
+            foo[j] = -1;
         }
+        //console.log(foo);
     }
+    //console.log("before filter : " + foo);
+    //console.log(foo.indexOf(-1))
+    foo = foo.filter(num => num!=-1);
+    document.getElementById("prime_result").innerHTML = foo;
+    //console.log("filtered : " +foo);
     /*j=0;
     frequency_num;
     while(j<number-1){
@@ -71,6 +78,7 @@ function getPrimeSeries(){
         for(i=frequency_num-2;)
     }
     console.log(foo);*/
+
 }
 
 function show_input(val){
