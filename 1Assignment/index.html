@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 1</title>
+
+    <style>
+        body{
+            padding: 50px;
+        }
+        .row{
+            display: flex;
+            justify-content: space-around;
+            padding-top : 10px;
+            padding-left: 10px;
+        }
+        .simple_calc button{
+            padding : 20px;
+        }
+    </style>
+
+    <script src="script.js"></script>
+</head>
+<body>
+    <div>
+        <input type="number" id="fibo_input"/><button onclick="getFiboSeries()">Get Fibnocci Series</button>
+       <div id="fibo_display_dithisv"></div>
+    </div>
+    <br>
+    <div>
+        <input type="number" id="fact_input"/><button onclick="getFact()">Get Fact</button>
+        <div id="fact_display_div"></div>
+    </div>
+    <br>
+    <div>
+        <input type="text" id="palindrome_input"/><button onclick="checkIfPalindrome()">Check If palindrome</button>
+        <div id="palindrome_result"></div>
+    </div>
+    <br>
+    <div>
+        <input type="text" id="prime_input"/><button onclick="getPrimeSeries()">Get Prime Number Series</button>
+        <div id="prime_result"></div>
+    </div>
+
+    <div class="simple_calc">
+        <h1>Simple Calculator</h1>
+        <div style="border: 1px solid black;padding:auto;width:500px">
+            <div style="width:500px;height:50px;background-color:grey;text-align:center"class="show_input" id="show_input"></div>
+            <div class="row">
+                <button onclick="simplecalc_getResult()">Get Result</button>
+                <button onclick="clear_calc()">Clear</button>
+            </div>
+            <div class="numberpad">
+                <div class="row">
+                    <div ><button onclick="show_input(this)">1</button></div>   
+                    <div ><button onclick="show_input(this)">2</button></div>   
+                    <div ><button onclick="show_input(this)">3</button></div>   
+                </div>
+                <div class="row">
+                    <div ><button onclick="show_input(this)">4</button></div>   
+                    <div ><button onclick="show_input(this)">5</button></div>   
+                    <div ><button onclick="show_input(this)">6</button></div>   
+                </div>
+                <div class="row">
+                    <div ><button onclick="show_input(this)">7</button></div>   
+                    <div ><button onclick="show_input(this)">8</button></div>   
+                    <div ><button onclick="show_input(this)">9</button></div>   
+                </div>
+                <div class="row">
+                    <button>0</button>
+                </div>
+                <div class="row">
+                    <div ><button onclick="show_input(this)">+</button></div>   
+                    <div ><button onclick="show_input(this)">-</button></div>   
+                    <div ><button onclick="show_input(this)">/</button></div>  
+                    <div ><button onclick="show_input(this)">*</button></div>   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
