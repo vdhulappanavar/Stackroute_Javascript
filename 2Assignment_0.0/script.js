@@ -27,7 +27,7 @@ function parsedata(json_data){
     //console.log("parsedata");
     ////console.log(json_data);
     ////console.log(JSON.parse(json_data)[0]['star']);
-    table_heading="<thead>";
+    table_heading="<thead class='thead-inverse'>";
     parsed_data = JSON.parse(json_data);
     //console.log(parsed_data)
     //console.log((Object.keys(parsed_data[0])));
@@ -69,10 +69,37 @@ function get_info(){
     console.log("in get_info");
     console.log(validate(document.getElementById("repo_name").value));
     if(validate(document.getElementById("repo_name").value)){
+        //validate_count_needed(document.getElementById('count_needed').value)
+        var c = (document.getElementById("repo_table").childNodes);
+        console.log(c);
+        var d = c[2].childNodes;
+        console.log(d);
+        console.log(typeof(d[0].childNodes[0]));
+        console.log(d[0].childNodes[0].innerHTML)
+        for(var i =0;i<d.length;i++){
+            console.log(typeof(d[i].childNode))
+            console.log((d[i].childNodes[0]))
+            //console.log(document.getElementById("repo_name").value)
+            if(d[i].childNodes[0].innerHTML == document.getElementById("repo_name").value){
+                console.log("true!!!!!!!!!!!");
+                //document.getElementById("repo_output").innerHTML+="hi";
+                console.log(document.getElementById('count_needed').value);
+                console.log(headings)// document.getElementById('count_needed').value)
+                console.log(headings.indexOf('url'))
+                console.log(headings.indexOf((document.getElementById('count_needed').value).toLowerCase()))
+                console.log(d[i].childNodes[headings.indexOf((document.getElementById('count_needed').value).toLowerCase())])
+                //document.getElementById("repo_output").innerHTML+="hi";
+                document.getElementById("repo_output").className = "alert alert-success text-center col-md-8";
+                document.getElementById("repo_output").style = "padding:50px;margin:30px";
+                document.getElementById("repo_output").innerHTML="<h2> No of "+document.getElementById('count_needed').value+" for "+document.getElementById("repo_name").value+" is <br>"+  d[i].childNodes[headings.indexOf((document.getElementById('count_needed').value).toLowerCase())].innerHTML+"</h2>"
+                document.getElementById("repo_output").innerHTML+= "<button class='btn btn-warning' onclick='clear_repo_output()'> Clear Output</button>";
+            }
 
+        }
     }
     else{
-
+        document.getElementById("error_msg").innerHTML =    '<div class="alert alert-danger">Wrong Repo_Url entered</div>';
+        document.getElementById("repo_name").value="";
     }
 }
 
@@ -80,7 +107,11 @@ function validate(str){
     //var str="https://github.com/angular/material2"
     var patt = new RegExp("https://github.com/[a-z]*[0-9]*/[a-z]*[0-9]*");
     var res = patt.exec(str);
-    console.log("res :: " + res);
+    console.log("res :::: " + res);
 
     return res==str;
+}
+
+function validate_count_needed(){
+   
 }

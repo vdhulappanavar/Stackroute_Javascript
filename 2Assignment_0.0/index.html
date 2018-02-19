@@ -16,21 +16,38 @@
         
         thead{            
             text-transform: capitalize;
+            display: table-header-group;
+             vertical-align: middle;
+            border-color: inherit;
+            font-size : 20px;
+        }
+        input{
+            border: 1px solid black;
+            padding : 10px;
         }
         
     </style>
 </head>
-<body onload="getData()"> 
-    <section>
-        <label for="repo_name">Repo_URL</label>
-        <input type="text" name="repo_name" id="repo_name"/>
-
-        <label>Repos count needed ? </label>
-        <input type="text" id="count_needed" />
-
-        <button onclick="get_info()">Get Info</button>
+<body onload="getData()" class="container"> 
+    
+    <section class="form"> 
+        <div class="form-group">
+            <label for="repo_name">Repo_URL</label>
+            <input type="text" name="repo_name" id="repo_name" value="https://github.com/"/>
+        </div>
+        <div>
+              <label>Repos count needed ? </label>
+              <input type="text" id="count_needed" />
+        </div>
+        <button class="btn btn-primary" onclick="get_info()">Get Info</button>
     </section>
-    <section class="conatainer">
+    <section class="col-6" id="error_msg">
+
+    </section>
+    <section class="col-md-6" id="repo_output">
+
+    </section>
+    <section class="conatainer col-12">
         <table class="table table-striped" id="repo_table">
 
         </table>
