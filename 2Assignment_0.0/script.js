@@ -89,7 +89,7 @@ function get_info(){
                 console.log(headings.indexOf((document.getElementById('count_needed').value).toLowerCase()))
                 console.log(d[i].childNodes[headings.indexOf((document.getElementById('count_needed').value).toLowerCase())])
                 //document.getElementById("repo_output").innerHTML+="hi";
-                document.getElementById("repo_output").className = "alert alert-success text-center col-md-8";
+                document.getElementById("repo_output").className = "alert alert-info     text-center col-md-8";
                 document.getElementById("repo_output").style = "padding:50px;margin:30px";
                 document.getElementById("repo_output").innerHTML="<h2> No of "+document.getElementById('count_needed').value+" for "+document.getElementById("repo_name").value+" is <br>"+  d[i].childNodes[headings.indexOf((document.getElementById('count_needed').value).toLowerCase())].innerHTML+"</h2>"
                 document.getElementById("repo_output").innerHTML+= "<button class='btn btn-warning' onclick='clear_repo_output()'> Clear Output</button>";
@@ -98,7 +98,7 @@ function get_info(){
         }
     }
     else{
-        document.getElementById("error_msg").innerHTML =    '<div class="alert alert-danger">Wrong Repo_Url entered</div>';
+        document.getElementById("error_msg").innerHTML =    '<div  style="margin:10px;padding:10px;"class="alert alert-danger col-md-6 text-center"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><h3>Wrong Repo_Url entered</h3></div>';
         document.getElementById("repo_name").value="";
     }
 }
@@ -114,4 +114,10 @@ function validate(str){
 
 function validate_count_needed(){
    
+}
+
+function clear_repo_output(){
+    document.getElementById("repo_output").innerHTML = "";
+    document.getElementById("repo_output").className="";
+    document.getElementById("repo_output").styley   ="";
 }
