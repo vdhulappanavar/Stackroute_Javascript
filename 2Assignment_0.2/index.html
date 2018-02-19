@@ -31,16 +31,16 @@
 <body onload="getData()" class="container"> 
     
     <section class="form"> 
-        <div class="form-group">
-            <label for="repo_name">Repo_URL : </label>            
-            <input list="repos_datalist" name="repo_name" id="repo_name" value="https://github.com/">
+        <div class="form-group row">
+            <label for="repo_name" class="col-md-2">Repo_URL : </label>            
+            <input class="col-md-8" list="repos_datalist" name="repo_name" id="repo_name" value="https://github.com/">
             <datalist id="repos_datalist">
                 
             </datalist>
         </div>
-        <div class="form-group">
-              <label>Repos count needed ? </label>
-              <select id="count_list">
+        <div class="form-group row">
+              <label class="col-md-3">Repos count needed ? </label>
+              <select id="count_list" class="col-md-5">
                     
                   </select>
                   

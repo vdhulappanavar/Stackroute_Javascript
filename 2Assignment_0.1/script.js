@@ -43,5 +43,14 @@ function filter_info(){
     console.log("in filter_info");
     input_value = document.getElementById("repo_name").value;
     console.log(input_value);
-    
+    var table_data = document.getElementById("repo_table").getElementsByTagName("tr")
+    console.log(table_data)
+    for(i in table_data){
+        //console.log(typeof(table_data[i]))
+        //console.log(table_data[i].childNodes[0].innerHTML)
+        if(input_value.localeCompare(table_data[i].childNodes[0].innerHTML) > -1)
+            console.log("stay")
+        
+        
+    }
 }
