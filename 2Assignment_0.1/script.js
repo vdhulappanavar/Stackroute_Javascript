@@ -44,10 +44,12 @@ function filter_info(){
     input_value = document.getElementById("repo_name").value;
     console.log(input_value);
     var table_data = document.getElementById("repo_table").getElementsByTagName("tr")
-    console.log(table_data)
+    console.log(table_data[0].childNodes[0].innerHTML)
     for(i in table_data){
+        console.log(table_data[i].childNodes[0].innerHTML)
         //console.log(typeof(table_data[i]))
         //console.log(table_data[i].childNodes[0].innerHTML)
+        if(table_data[i].childNodes[0].innerHTML)
         if(input_value.localeCompare(table_data[i].childNodes[0].innerHTML) > -1)
             console.log("stay")
         

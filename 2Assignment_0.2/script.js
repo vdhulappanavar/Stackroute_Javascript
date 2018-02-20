@@ -50,7 +50,7 @@ function get_info(){
     var foo3 = foo2[headings.indexOf(document.getElementById("count_list").value)]
     document.getElementById("repo_output").className = "alert alert-info     text-center col-md-12";
     document.getElementById("repo_output").style = "padding:50px;margin:30px";
-    document.getElementById("repo_output").innerHTML="<h2> No of "+document.getElementById('count_list').value+" for "+ foo +" is <br>"+  foo3.innerHTML+"</h2>"
+    document.getElementById("repo_output").innerHTML="<h2> No of <span class='hidden-xs'>"+document.getElementById('count_list').value+"</span><span class='visible-sm>hey</span>' for "+ foo +" is <br>"+  foo3.innerHTML+"</h2>"
     document.getElementById("repo_output").innerHTML+= "<button class='btn btn-warning' onclick='clear_repo_output()'> Clear Output</button>";
 }
 
@@ -58,6 +58,13 @@ function validate(str){
     var patt = new RegExp("https://github.com/[a-z]*[0-9]*/[a-z]*[0-9]*");
     var res = patt.exec(str);
     return res==str;
+}
+
+function clear_repo_output(){
+    document.getElementById("repo_output").className = "";
+    document.getElementById("repo_output").style = "";
+    document.getElementById("repo_output").innerHTML=""
+
 }
 
 function validate_count_needed(){
