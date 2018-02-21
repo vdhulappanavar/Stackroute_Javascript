@@ -90,7 +90,8 @@ const age_map_file = fs.createWriteStream('./age_map.json');
 age_map_file.write("[\n");
 for(i in age_map_dict){
     //console.log(age_map_dict[i])
-    age_map_file.write('{\n\t"'+i+'":'+age_map_dict[i]+'\n},\n')
+    //age_map_file.write('{\n\t"'+i+'":'+age_map_dict[i]+'\n},\n')
+    age_map_file.write('{\n\t"age-group" : "'+i+'",\n\t"number" : '+age_map_dict[i]+'},\n')
 }
 age_map_file.write("]\n");
 age_map_file.end();
@@ -99,7 +100,7 @@ const education_category_file = fs.createWriteStream('./education_category.json'
 education_category_file.write("[\n");
 for(i in Education_Category_dict){
     //console.log(age_map_dict[i])
-    education_category_file.write('{\n\t"'+i+'":'+Education_Category_dict[i]+'\n},\n')
+    education_category_file.write('{\n\t"Education_Category" : "'+i+'",\n\t"number" : '+Education_Category_dict[i]+'\n},\n')
 }
 education_category_file.write("]\n");
 education_category_file.end();

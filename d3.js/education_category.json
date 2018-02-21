@@ -1,0 +1,43 @@
+[
+	{
+		"Education_Category" : " Literate without educational level ",
+		"number" : 171670752
+	},
+	{
+		"Education_Category" : " Below Primary ",
+		"number" : 751691352
+	},
+	{
+		"Education_Category" : " Primary ",
+		"number" : 921147160
+	},
+	{
+		"Education_Category" : " Middle ",
+		"number" : 660343812
+	},
+	{
+		"Education_Category" : " Matric/Secondary ",
+		"number" : 495879992
+	},
+	{
+		"Education_Category" : " Higher secondary/Intermediate/Pre - University/Senior secondary ",
+		"number" : 360639156
+	},
+	{
+		"Education_Category" : " Non - technical diploma or certificate not equal to degree ",
+		"number" : 4651712
+	},
+	{
+		"Education_Category" : " Technical diploma or certificate not equal to degree ",
+		"number" : 33160332
+	},
+	{
+		"Education_Category" : " Graduate & above ",
+		"number" : 302381308
+	},
+	{
+		"Education_Category" : " Unclassified ",
+		"number" : 15091552
+	}
+	]
+	

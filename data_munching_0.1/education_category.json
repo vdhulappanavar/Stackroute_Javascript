@@ -1,32 +1,42 @@
 [
 {
-	" Literate without educational level ":171670752
+	"Education_Category" : " Literate without educational level ",
+	"number" : 171670752
 },
 {
-	" Below Primary ":751691352
+	"Education_Category" : " Below Primary ",
+	"number" : 751691352
 },
 {
-	" Primary ":921147160
+	"Education_Category" : " Primary ",
+	"number" : 921147160
 },
 {
-	" Middle ":660343812
+	"Education_Category" : " Middle ",
+	"number" : 660343812
 },
 {
-	" Matric/Secondary ":495879992
+	"Education_Category" : " Matric/Secondary ",
+	"number" : 495879992
 },
 {
-	" Higher secondary/Intermediate/Pre - University/Senior secondary ":360639156
+	"Education_Category" : " Higher secondary/Intermediate/Pre - University/Senior secondary ",
+	"number" : 360639156
 },
 {
-	" Non - technical diploma or certificate not equal to degree ":4651712
+	"Education_Category" : " Non - technical diploma or certificate not equal to degree ",
+	"number" : 4651712
 },
 {
-	" Technical diploma or certificate not equal to degree ":33160332
+	"Education_Category" : " Technical diploma or certificate not equal to degree ",
+	"number" : 33160332
 },
 {
-	" Graduate & above ":302381308
+	"Education_Category" : " Graduate & above ",
+	"number" : 302381308
 },
 {
-	" Unclassified ":15091552
+	"Education_Category" : " Unclassified ",
+	"number" : 15091552
 },
 ]
