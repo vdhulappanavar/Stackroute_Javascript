@@ -1,90 +1,90 @@
 [
-    {
-        "age_group" : "7",
-        "number" : 45637146},
-    {
-        "age_group" : "8",
-        "number" : 58022842},
-    {
-        "age_group" : "9",
-        "number" : 53131142},
-    {
-        "age_group" : "10",
-        "number" : 68861406},
-    {
-        "age_group" : "11",
-        "number" : 57613926},
-    {
-        "age_group" : "12",
-        "number" : 64697632},
-    {
-        "age_group" : "13",
-        "number" : 56774948},
-    {
-        "age_group" : "14",
-        "number" : 58342438},
-    {
-        "age_group" : "15",
-        "number" : 58650396},
-    {
-        "age_group" : "16",
-        "number" : 55372642},
-    {
-        "age_group" : "17",
-        "number" : 47773702},
-    {
-        "age_group" : "18",
-        "number" : 60437750},
-    {
-        "age_group" : "19",
-        "number" : 45242416},
-    {
-        "age_group" : "All ages",
-        "number" : 1858328564},
-    {
-        "age_group" : "0-6",
-        "number" : 0},
-    {
-        "age_group" : "20-24",
-        "number" : 228256000},
-    {
-        "age_group" : "25-29",
-        "number" : 191483696},
-    {
-        "age_group" : "30-34",
-        "number" : 154073038},
-    {
-        "age_group" : "35-39",
-        "number" : 136486916},
-    {
-        "age_group" : "40-44",
-        "number" : 107417046},
-    {
-        "age_group" : "45-49",
-        "number" : 86715832},
-    {
-        "age_group" : "50-54",
-        "number" : 65106950},
-    {
-        "age_group" : "55-59",
-        "number" : 49114198},
-    {
-        "age_group" : "60-64",
-        "number" : 40321684},
-    {
-        "age_group" : "65-69",
-        "number" : 26386922},
-    {
-        "age_group" : "70-74",
-        "number" : 17121410},
-    {
-        "age_group" : "75-79",
-        "number" : 8526208},
-    {
-        "age_group" : "80+",
-        "number" : 9840378},
-    {
-        "age_group" : "Age not stated",
-        "number" : 6919900}
-    ]
-    
+	{
+		"age_group" : "7",
+		"number" : 45637146}
+	,{
+		"age_group" : "8",
+		"number" : 58022842}
+	,{
+		"age_group" : "9",
+		"number" : 53131142}
+	,{
+		"age_group" : "10",
+		"number" : 68861406}
+	,{
+		"age_group" : "11",
+		"number" : 57613926}
+	,{
+		"age_group" : "12",
+		"number" : 64697632}
+	,{
+		"age_group" : "13",
+		"number" : 56774948}
+	,{
+		"age_group" : "14",
+		"number" : 58342438}
+	,{
+		"age_group" : "15",
+		"number" : 58650396}
+	,{
+		"age_group" : "16",
+		"number" : 55372642}
+	,{
+		"age_group" : "17",
+		"number" : 47773702}
+	,{
+		"age_group" : "18",
+		"number" : 60437750}
+	,{
+		"age_group" : "19",
+		"number" : 45242416}
+	,{
+		"age_group" : "All ages",
+		"number" : 1858328564}
+	,{
+		"age_group" : "0-6",
+		"number" : 0}
+	,{
+		"age_group" : "20-24",
+		"number" : 228256000}
+	,{
+		"age_group" : "25-29",
+		"number" : 191483696}
+	,{
+		"age_group" : "30-34",
+		"number" : 154073038}
+	,{
+		"age_group" : "35-39",
+		"number" : 136486916}
+	,{
+		"age_group" : "40-44",
+		"number" : 107417046}
+	,{
+		"age_group" : "45-49",
+		"number" : 86715832}
+	,{
+		"age_group" : "50-54",
+		"number" : 65106950}
+	,{
+		"age_group" : "55-59",
+		"number" : 49114198}
+	,{
+		"age_group" : "60-64",
+		"number" : 40321684}
+	,{
+		"age_group" : "65-69",
+		"number" : 26386922}
+	,{
+		"age_group" : "70-74",
+		"number" : 17121410}
+	,{
+		"age_group" : "75-79",
+		"number" : 8526208}
+	,{
+		"age_group" : "80+",
+		"number" : 9840378}
+	,{
+		"age_group" : "Age not stated",
+		"number" : 6919900}
+	]
+	
